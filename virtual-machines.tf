@@ -125,19 +125,3 @@ resource "google_compute_instance" "firewall" {
     google_compute_subnetwork.dmz
   ]
 }
-
-# -----------------------------------------------------------------------------
-# Optional: Static External IP for Firewall VM
-# -----------------------------------------------------------------------------
-# Uncomment the following to assign a static external IP to the firewall VM
-
-# resource "google_compute_address" "firewall_external_ip" {
-#   name    = "${var.firewall_vm_name}-external-ip"
-#   region  = var.region
-#   project = var.project_id
-# }
-
-# Then update the firewall VM's access_config:
-#   access_config {
-#     nat_ip = google_compute_address.firewall_external_ip.address
-#   }
