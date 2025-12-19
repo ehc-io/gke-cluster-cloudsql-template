@@ -1,5 +1,5 @@
 # =============================================================================
-# GCP Foundation Template - Main Configuration
+# GCP Projec Template - Main Configuration
 # =============================================================================
 # This Terraform configuration serves as a foundation template for provisioning
 # GCP resources. Deploy this to an empty GCP project.
